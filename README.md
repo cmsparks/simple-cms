@@ -1,2 +1,2 @@
-# simple-style
-Super simple css theme, inspired by the Sakura css theme. 
+# simple-cms
+A simple content management system built in React.
