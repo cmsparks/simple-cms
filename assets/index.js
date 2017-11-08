@@ -1,0 +1,1 @@
+export txt from 'test.txt'

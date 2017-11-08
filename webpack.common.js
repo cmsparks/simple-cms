@@ -39,6 +39,10 @@ module.exports = {
         test: /\.(png|woff|woff2|eot|ttf|otf|svg)$/,
         include: APP_DIR,
         loader: 'url-loader'
+      },
+      {
+        test: /\.txt$/,
+        use: 'raw-loader'
       }
     ]
   }
