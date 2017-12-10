@@ -4,11 +4,25 @@ import txt from "../../../assets/test.txt"
 console.log(txt)
 
 function createMarkup() {
+	//prevent scripting and deformats html tags
 	var parsed=replaceAll(txt,">","&gt")
 	parsed=replaceAll(parsed,"<","&lt")
+	//Formats markup
+	/*
+		TODO - Implement:
+		Bold
+		Underline
+		Strikethrough
+		Escape Sequences: \ 
+		Headings
+		Quotes
+		Code
+		Images
+		Table: (implement in csv)
+	 */
 	parsed=replaceAllPairs(parsed,"__","<ul>")
-	parsed="<p>"+parsed+"</p>"
-	console.log(parsed)
+	//Finalizes parsed text
+	parsed="<div>"+parsed+"</div>"
 	return {__html: parsed};
 }
 function replaceAllPairs(string,pattern,replacement) {
